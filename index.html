@@ -17,12 +17,12 @@
     <form id="text-form">
       <h2>Vamos lá?</h2>
       <label for="text-area">Insira o texto desejado abaixo:</label>
-      <textarea name="text" id="text" required></textarea>
+      <textarea name="text" id="text" placeholder="Aqui vai seu texto..." required></textarea>
       <input type="submit" value="Enviar">
     </form>
 
     <div id="resultado" class="resultado">
-
+      
     </div>
   </div>
 
@@ -46,7 +46,7 @@
             message.innerHTML = `<p style="color:red;">${data.error}</p>`;
           } else {
             console.log('Deu certo')
-            message.innerHTML = `<p>Áudio gerado com sucesso! <a href="${data.audio_arquivo}" target="_blank">Clique aqui para ouvir</a></p>`;
+            message.innerHTML = `<p>Áudio gerado com sucesso! <a href="${data.caminho_arquivo}" target="_blank">Clique aqui para ouvir</a></p>`;
           }
         })
         .catch(error => {
