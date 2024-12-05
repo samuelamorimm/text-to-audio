@@ -44,6 +44,18 @@ body {
   color: #1d91f7;
 }
 
+.logo div {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+}
+
+.logo i {
+  font-size: 40px;
+}
+
 .logo p {
   color: #a8d1f5;
 }
